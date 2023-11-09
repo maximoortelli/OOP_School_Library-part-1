@@ -4,7 +4,7 @@ require_relative 'capitalize_decorator'
 require_relative 'trimmer_decorator'
 require_relative 'classroom'
 require_relative 'rental'
-c
+
 # This Class represent a person
 class Person < Nameable
   attr_accessor :name, :age, :rentals
