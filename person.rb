@@ -19,11 +19,6 @@ class Person < Nameable
     @rentals = []
   end
 
-  def classroom=(classroom)
-    @classroom = classroom
-    classroom.add_student(self)
-  end
-
   def add_rentals(book, date)
     @rentals << Rental.new(date, book, self)
   end
