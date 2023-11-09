@@ -1,7 +1,7 @@
 require_relative 'person'
 
 # This class represent a student
-class Student < person
+class Student < Person
   def initialize(name, age, classroom, parent_permission: true)
     super(name, age, parent_permission: parent_permission)
     @classroom = classroom
