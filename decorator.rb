@@ -1,6 +1,6 @@
 require_relative 'nameable'
 
-# This calss represent the decorator
+# This class represent the decorator
 class Decorator < Nameable
   attr_accessor :nameable
 
