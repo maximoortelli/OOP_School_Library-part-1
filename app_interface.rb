@@ -15,6 +15,12 @@ class AppInterface
     @app = app
   end
 
+  def create_person_option
+    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
+    person_type = gets.chomp
+    @app.create_person(person_type)
+  end
+
   def run
     loop do
       option = display_menu
@@ -32,7 +38,12 @@ class AppInterface
   def handle_option(option)
     action = ACTIONS[option]
     if action
-      @app.send(action)
+      case action
+      when :create_person
+        create_person_option
+      else
+        @app.send(action)
+      end
     else
       puts 'Invalid option. Please try again.'
     end
