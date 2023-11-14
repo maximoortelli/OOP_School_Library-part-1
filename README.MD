@@ -81,6 +81,12 @@ git clone https://github.com/maximoortelli/OOP_School_Library.git
 - GitHub: [@Maximo Ortelli](https://github.com/maximoortelli)
 - LinkedIn: [Maximo Ortelli](https://www.linkedin.com/in/maximo-ortelli-rueda/)
 
+👤 **Ivonne Benites Rodriguez**
+
+- GitHub: [Ivonne Benites](https://github.com/IvonneBenitesRodriguez)
+- Twitter: [Ivonne Benites](https://twitter.com/IvonneBenitesR)
+- LinkedIn: [Ivonne Benites](https://www.linkedin.com/in/ivonnebenites/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
