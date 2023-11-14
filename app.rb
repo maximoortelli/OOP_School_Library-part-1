@@ -25,6 +25,7 @@ class App
   def create_person
     puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     person_type = gets.chomp
+    @app.create_person(person_type)
 
     case person_type
     when '1'
@@ -40,7 +41,7 @@ class App
     end
   end
 
-  def create_student
+  def create_student_option
     print 'Name: '
     name = gets.chomp
 
