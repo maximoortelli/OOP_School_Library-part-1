@@ -29,6 +29,13 @@ class AppInterface
     ACTIONS.each { |key, value| puts "#{key} - #{value.to_s.tr('_', ' ')}" }
     print 'Option: '
     gets.chomp.to_i
+    
+    case option
+    when 3
+      create_person_option
+    else
+      option
+    end
   end
 
   def handle_option(option)
