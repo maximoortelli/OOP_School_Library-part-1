@@ -1,6 +1,6 @@
 # app_interface.rb
 
-require_relative 'app'
+require_relative 'app' unless defined?(App)
 
 class AppInterface
   ACTIONS = {
@@ -29,7 +29,7 @@ class AppInterface
     ACTIONS.each { |key, value| puts "#{key} - #{value.to_s.tr('_', ' ')}" }
     print 'Option: '
     gets.chomp.to_i
-    
+
     case option
     when 3
       create_person_option
