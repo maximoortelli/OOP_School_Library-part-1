@@ -1,10 +1,12 @@
+# app_interface.rb
+
 require_relative 'app'
 
 class AppInterface
   ACTIONS = {
     1 => :list_books,
     2 => :list_people,
-    3 => :create_person,
+    3 => :create_person_option,
     4 => :create_book,
     5 => :create_rental,
     6 => :list_rentals_for_person,
@@ -13,12 +15,6 @@ class AppInterface
 
   def initialize(app)
     @app = app
-  end
-
-  def create_person_option
-    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
-    person_type = gets.chomp
-    @app.create_person(person_type)
   end
 
   def run
@@ -38,14 +34,15 @@ class AppInterface
   def handle_option(option)
     action = ACTIONS[option]
     if action
-      case action
-      when :create_person
-        create_person_option
-      else
-        @app.send(action)
-      end
+      send(action)
     else
       puts 'Invalid option. Please try again.'
     end
+  end
+
+  def create_person_option
+    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
+    person_type = gets.chomp
+    @app.create_person(person_type)
   end
 end
